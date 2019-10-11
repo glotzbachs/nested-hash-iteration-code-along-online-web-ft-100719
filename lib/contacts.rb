@@ -15,10 +15,11 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"].each {|attributes,value}
-    if attributes==:favorite_ice_cream_flavors
-      value.each {
-      
-  
-
+  contacts.each {|person,contact_details|
+    if person=="Freddy Mercury"
+      contact_details.each {|attributes,value}
+        if attributes==:favorite_ice_cream_flavors
+          value.reject("strawberry")
+        end
+    end
 end
