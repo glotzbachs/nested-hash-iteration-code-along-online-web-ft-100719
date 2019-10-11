@@ -21,7 +21,7 @@ def remove_strawberry(contacts)
         if attributes==:favorite_ice_cream_flavors
           value.reject("strawberry")
         end
+      }
     end
-    }
   }
 end
