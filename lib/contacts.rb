@@ -22,4 +22,6 @@ def remove_strawberry(contacts)
           value.reject("strawberry")
         end
     end
+    }
+  }
 end
