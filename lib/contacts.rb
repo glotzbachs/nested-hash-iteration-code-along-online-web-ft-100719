@@ -19,7 +19,7 @@ def remove_strawberry(contacts)
     if person=="Freddy Mercury"
       contact_details.each {|attributes,value|
         if attributes==:favorite_ice_cream_flavors
-          value.reject("strawberry")
+          value.delete_if{|ice_cream| ice_cream=="strawberry"}
         end
       }
     end
